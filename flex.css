@@ -2,7 +2,7 @@
 .box{
 	display: -webkit-flex;
 	display: flex;
-	flex-direction: row|row-reverse|colum|colum-reverse;
+	flex-direction: row|row-reverse|column|column-reverse;
 	flex-wrap: nowrap|wrap|wrap-reverse;
 	flex-flow: row nowrap;/* 以上两者的简写，写法为默认值 */
 	justify-content: flex-start|flex-end|center|space-between|space-around;
