@@ -1,0 +1,20 @@
+/* flex布局 属性列举*/
+.box{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row|row-reverse|colum|colum-reverse;
+	flex-wrap: nowrap|wrap|wrap-reverse;
+	flex-flow: row nowrap;/* 以上两者的简写，写法为默认值 */
+	justify-content: flex-start|flex-end|center|space-between|space-around;
+	align-items: flex-start|flex-end|center|stretch|baseline;
+	align-content: flex-start|flex-end|center|stretch|space-between|space-around;
+}
+.item{
+	order:0;
+	flex-grow: <number>; /* default 0 即如果存在剩余空间，也不放大。*/
+	flex-shrink: <number>; /* default 1 如果空间不足，该项目将缩小。*/
+	flex-basis: <length> | auto; /* default auto */
+	     
+	flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] ; /* 以上三者的简写，有两个值快捷值：auto (1 1 auto)  none (0 0 auto) */
+	align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
